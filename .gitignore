@@ -1,0 +1,27 @@
+# Sistema e editor
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+.~lock.*#
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Temporarios
+*.tmp
+*.temp
+*.log
+
+# Projetos de teste gerados localmente
+livro-de-teste*/
+meu-livro*/
+tmp-*/
+

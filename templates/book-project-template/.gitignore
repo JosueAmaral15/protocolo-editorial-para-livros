@@ -1,0 +1,32 @@
+# Sistema e editor
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+.~lock.*#
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Logs e temporarios
+*.log
+*.tmp
+*.temp
+
+# Build reconstruivel
+build/**
+!build/
+!build/README.md
+!build/**/
+!build/**/.gitkeep
+
+# Backups locais muito grandes devem ser avaliados antes de versionar
+# backups/
+
