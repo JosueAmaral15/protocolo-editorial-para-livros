@@ -101,4 +101,6 @@ Validacoes executadas antes do commit/push:
 - busca por caches Python e projetos de teste permanentes;
 - busca por `TODO`, `FIXME` e `PLACEHOLDER`, com ocorrencias apenas em exemplos intencionais de validacao.
 
-Observacao: apos o push inicial, este historico e os documentos operacionais foram atualizados para registrar o resultado; por isso, sera feito um segundo commit pequeno de documentacao.
+Observacao: apos o push inicial, este historico e os documentos operacionais foram atualizados para registrar o resultado; por isso, foi feito um segundo commit pequeno de documentacao:
+
+- `03e3310 Document initial GitHub publication`.

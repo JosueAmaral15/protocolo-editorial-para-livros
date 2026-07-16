@@ -69,5 +69,6 @@ git push -u origin main
 - Git init: OK.
 - Branch principal: `main`.
 - Primeiro commit: `7d5215f Initial editorial book protocol`.
+- Commit posterior de documentacao: `03e3310 Document initial GitHub publication`.
 - Remoto: `https://github.com/JosueAmaral15/protocolo-editorial-para-livros.git`.
 - Push inicial: OK, `main` configurada para rastrear `origin/main`.
