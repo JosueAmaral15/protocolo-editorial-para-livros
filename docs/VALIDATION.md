@@ -66,4 +66,8 @@ git push -u origin main
 - Criacao temporaria de projeto: OK, com conferencia de arquivos essenciais e substituicao de placeholders.
 - Cache Python e projetos de teste permanentes: nao encontrados.
 - Busca por `TODO`, `FIXME` e `PLACEHOLDER`: apenas ocorrencias intencionais em exemplos de validacao.
-- Git init/commit/push: pendente.
+- Git init: OK.
+- Branch principal: `main`.
+- Primeiro commit: `7d5215f Initial editorial book protocol`.
+- Remoto: `https://github.com/JosueAmaral15/protocolo-editorial-para-livros.git`.
+- Push inicial: OK, `main` configurada para rastrear `origin/main`.

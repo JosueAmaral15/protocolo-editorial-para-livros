@@ -4,10 +4,6 @@
 
 - [ ] Revisar `pt/PROTOCOLO_EDITORIAL_LIVROS.md` apos publicacao inicial.
 - [ ] Adicionar exemplos praticos de projetos de livro.
-- [ ] Inicializar Git.
-- [ ] Fazer primeiro commit.
-- [ ] Configurar remoto no GitHub.
-- [ ] Fazer push.
 
 ## Em andamento
 
@@ -30,6 +26,10 @@
 - [x] Criar protocolo em ingles.
 - [x] Manter READMEs em `pt/` e `en/`.
 - [x] Definir remoto GitHub: `https://github.com/JosueAmaral15/protocolo-editorial-para-livros.git`.
+- [x] Inicializar Git.
+- [x] Fazer primeiro commit.
+- [x] Configurar remoto no GitHub.
+- [x] Fazer push para `origin/main`.
 
 ## Revisao humana
 

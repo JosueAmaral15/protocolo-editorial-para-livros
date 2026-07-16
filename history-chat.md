@@ -74,3 +74,31 @@ Plano operacional:
 7. commitar;
 8. configurar remoto;
 9. fazer push.
+
+## 2026-07-16 - Publicacao inicial no GitHub
+
+Resultado:
+
+- `LICENSE` MIT criado.
+- `README.md` raiz reescrito em ingles.
+- Documentacao bilingue criada:
+  - `pt/PROTOCOLO_EDITORIAL_LIVROS.md`;
+  - `en/EDITORIAL_BOOK_PROTOCOL.md`.
+- `pt/README.md` e `en/README.md` conferidos.
+- Git inicializado em `main`.
+- Primeiro commit criado:
+  - `7d5215f Initial editorial book protocol`.
+- Remoto configurado:
+  - `https://github.com/JosueAmaral15/protocolo-editorial-para-livros.git`.
+- Push inicial concluido com sucesso para `origin/main`.
+
+Validacoes executadas antes do commit/push:
+
+- sintaxe do gerador Python via `compile()`;
+- `--dry-run` do gerador;
+- criacao real temporaria de projeto;
+- conferencia de arquivos essenciais gerados;
+- busca por caches Python e projetos de teste permanentes;
+- busca por `TODO`, `FIXME` e `PLACEHOLDER`, com ocorrencias apenas em exemplos intencionais de validacao.
+
+Observacao: apos o push inicial, este historico e os documentos operacionais foram atualizados para registrar o resultado; por isso, sera feito um segundo commit pequeno de documentacao.
