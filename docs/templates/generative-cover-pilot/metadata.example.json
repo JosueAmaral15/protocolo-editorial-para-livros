@@ -1,0 +1,53 @@
+{
+  "status": "piloto_generativo_revisavel_nao_final",
+  "created_at": "YYYY-MM-DDTHH:MM:SS-03:00",
+  "book": {
+    "title": "<TITLE>",
+    "subtitle": "<SUBTITLE>",
+    "author": "<AUTHOR>",
+    "language": "<pt|en|other>",
+    "source_pdf": "<absolute-or-project-relative-path-to-interior-pdf>",
+    "source_pdf_pages": 0,
+    "format": "A5"
+  },
+  "cover_layout": {
+    "platform": "UICLAP",
+    "dpi": 600,
+    "total_px": [0, 0],
+    "total_mm": [0, 0],
+    "back_px": [0, 0],
+    "spine_px": [0, 0],
+    "front_px": [0, 0],
+    "bleed_mm": 5,
+    "safety_margin_mm": 10,
+    "spine_mm": 0,
+    "spine_status": "estimativa_nao_final",
+    "spine_note": "Confirm official spine after final interior upload/page count."
+  },
+  "methodology": [
+    "AI-generated or curated textless base art",
+    "local deterministic typography and complete-cover composition",
+    "separate files for base art, front cover, clean complete cover, and validation preview"
+  ],
+  "files": {
+    "base_art": "<slug>-base-generativa-v1.png",
+    "front_cover": "<slug>-capa-frontal-piloto-v1.png",
+    "complete_cover": "<slug>-capa-completa-uiclap-piloto-v1.jpg",
+    "validation_preview": "<slug>-capa-completa-uiclap-piloto-v1-preview-validacao.jpg",
+    "prompt": "prompt-base-generativa.md",
+    "script": "build_pilot_cover.py"
+  },
+  "sha256": {
+    "base_art": "<sha256>",
+    "front_cover": "<sha256>",
+    "complete_cover": "<sha256>",
+    "validation_preview": "<sha256>"
+  },
+  "human_review": {
+    "visual_review": "pending",
+    "uiclap_spine_confirmation": "pending",
+    "uiclap_3d_preview": "pending",
+    "barcode_or_isbn_review": "pending",
+    "approval_to_scale_batch": "pending"
+  }
+}

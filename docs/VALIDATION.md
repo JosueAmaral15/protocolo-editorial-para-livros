@@ -29,6 +29,41 @@ find . -maxdepth 3 -type f | sort
 find . -maxdepth 3 -type d | sort
 ```
 
+## Validacao de piloto de capa generativa
+
+Conferir dimensoes, formato, modo de cor e DPI:
+
+```bash
+python3 - <<'PY'
+from pathlib import Path
+from PIL import Image
+
+root = Path("capas/pilotos-generativos/exemplo")
+for name in [
+    "base-generativa-v1.png",
+    "capa-frontal-piloto-v2.png",
+    "capa-completa-uiclap-piloto-v2.jpg",
+    "capa-completa-uiclap-piloto-v2-preview-validacao.jpg",
+]:
+    path = root / name
+    image = Image.open(path)
+    print(name, image.format, image.mode, image.size, image.info.get("dpi"))
+PY
+```
+
+Checklist especifico:
+
+- [ ] A arte-base esta preservada sem texto, logo, assinatura ou marca d'agua.
+- [ ] A capa completa limpa nao contem guias, linhas de corte, avisos tecnicos ou a palavra `piloto`.
+- [ ] O preview com guias esta separado do arquivo limpo.
+- [ ] Titulo, subtitulo, autor, lombada e contracapa foram compostos localmente.
+- [ ] A contracapa apresenta texto editorial/comercial, nao explicacao tecnica do processo.
+- [ ] Ha reserva visual para codigo de barras/ISBN quando aplicavel.
+- [ ] `README.md`, prompt, metadados e hashes estao presentes.
+- [ ] A lombada esta marcada como `estimativa_nao_final` quando ainda nao foi confirmada pela plataforma.
+- [ ] O resultado foi revisado visualmente em tamanho completo e miniatura.
+- [ ] O piloto foi aprovado antes de qualquer geracao em lote.
+
 ## Checklist antes de publicar
 
 - [ ] `README.md` explica objetivo, uso e estrutura.

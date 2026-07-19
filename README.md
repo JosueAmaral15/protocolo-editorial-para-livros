@@ -50,7 +50,9 @@ Each language directory has its own `README.md`.
 │   ├── GLOBAL_HISTORY_EXTRACT.md
 │   ├── README.md
 │   ├── TASKS.md
-│   └── VALIDATION.md
+│   ├── VALIDATION.md
+│   └── templates/
+│       └── generative-cover-pilot/
 ├── pt/
 │   ├── README.md
 │   └── PROTOCOLO_EDITORIAL_LIVROS.md
@@ -89,6 +91,14 @@ A generated book project includes:
 - `backups/`: dated backups before risky changes;
 - `old/`: old versions kept for historical reference.
 
+## Generative Cover Rule
+
+For commercial covers, generative AI should produce textless base art. Titles, subtitles, author names, spine text, back-cover copy, barcode reserves, and validation guides should be composed locally and kept auditable.
+
+Before scaling cover generation to a catalog, create a pilot folder with the base art, prompt, composition script, clean complete cover, separate validation preview, metadata, and hashes. A technically valid image is not publication-ready until it passes visual review and platform-specific checks such as UICLAP spine and preview validation.
+
+Reusable pilot templates live in [docs/templates/generative-cover-pilot](docs/templates/generative-cover-pilot).
+
 ## Generator
 
 The generator is available at:
@@ -123,4 +133,3 @@ MIT License. See [LICENSE](LICENSE).
 ## Current Status
 
 First public repository version prepared with Portuguese and English protocol documentation, MIT license, template, and Python generator.
-

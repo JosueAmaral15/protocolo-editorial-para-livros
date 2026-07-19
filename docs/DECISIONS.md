@@ -71,3 +71,15 @@
 **Motivo:** este e o destino definido pelo usuario para commit e push.
 
 **Impacto:** apos `git init`, o primeiro commit deve ser enviado para esse remoto.
+
+## 2026-07-19 - Pilotos generativos antes de capas em lote
+
+**Status:** aceito
+
+**Contexto:** uma prova tecnica de capa pode ter dimensoes corretas, lombada e metadados, mas ainda assim nao funcionar como capa comercial. O piloto `Anthropology` mostrou que o fluxo correto precisa separar arte generativa sem texto, composicao local e validacao visual.
+
+**Decisao:** antes de gerar capas em lote, criar pelo menos um piloto por metodologia/tema em pasta separada, com arte-base preservada, prompt, script de composicao, metadados, hashes, capa completa limpa e preview separado com guias.
+
+**Motivo:** o piloto permite identificar problemas de promessa visual, tipografia, contracapa, lombada, texto tecnico visivel e requisitos UICLAP antes de multiplicar o erro em dezenas de livros.
+
+**Impacto:** arquivos com guias ou avisos tecnicos nao devem ser confundidos com capas limpas. Status como `piloto`, `preview`, `validacao` e `estimativa_nao_final` pertence a README/metadados, nao ao arquivo limpo destinado a revisao de upload.

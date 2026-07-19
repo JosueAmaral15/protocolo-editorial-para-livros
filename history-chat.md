@@ -104,3 +104,78 @@ Validacoes executadas antes do commit/push:
 Observacao: apos o push inicial, este historico e os documentos operacionais foram atualizados para registrar o resultado; por isso, foi feito um segundo commit pequeno de documentacao:
 
 - `03e3310 Document initial GitHub publication`.
+
+## 2026-07-19 - Registro previo: migracao do historico global bruto para legacy
+
+O usuario solicitou mover o arquivo `global-history-chat.md` para `legacy/` dentro deste repositorio e atualizar os protocolos bilingues com o aprendizado reutilizavel contido nesse historico.
+
+Plano operacional:
+
+1. localizar e ler o `global-history-chat.md` real;
+2. extrair regras reutilizaveis para o protocolo editorial, sem transformar o documento principal em copia integral do historico bruto;
+3. atualizar `pt/PROTOCOLO_EDITORIAL_LIVROS.md` e `en/EDITORIAL_BOOK_PROTOCOL.md`;
+4. mover o historico bruto para `legacy/global-history-chat.md`;
+5. validar estrutura, diff e ausencia de residuos basicos.
+
+Registro posterior:
+
+- localizado o historico bruto em `/home/josue/Documents/josue-writter-workspace/global-history-chat.md`;
+- lido o arquivo por blocos e mapeados seus topicos principais;
+- atualizado `pt/PROTOCOLO_EDITORIAL_LIVROS.md` com regras consolidadas sobre historico local/global, `legacy/`, reescrita editorial abrangente, conversao, diagramacao ABNT, validacao objetiva, UICLAP, miolo, capas, QR Code, capas geradas por IA, temas sensiveis, referencias reais e processos pesados;
+- atualizado `en/EDITORIAL_BOOK_PROTOCOL.md` com conteudo equivalente em ingles;
+- movido o historico bruto para `legacy/global-history-chat.md`;
+- confirmada a ausencia do arquivo no caminho antigo e a presenca do arquivo movido com 1174 linhas;
+- validacoes executadas: busca por espacos finais com `rg`, `git diff --check`, leitura de trechos dos protocolos atualizados, `git status --short` e conferencia de tamanho do arquivo arquivado;
+- resultado: o historico bruto ficou preservado como legado auditavel, e as regras operacionais reutilizaveis passaram a estar nos protocolos bilingues.
+
+## 2026-07-19 - Registro previo: revisao da regra de capas com IA generativa
+
+O usuario apontou que as tentativas automatizadas anteriores de capas em lote ficaram ruins quando comparadas a uma capa comercial realmente produzida com IA generativa, como a de `O Juramento da Herdeira de Vinterholm`.
+
+Plano operacional:
+
+1. analisar `/home/josue/Documents/josue-writter-workspace/O Juramento da Herdeira de Vinterholm/publicacao/capa`;
+2. comparar o fluxo dessa capa com as capas candidatas geradas por script em `books/capas`;
+3. registrar no protocolo que arte abstrata/scriptada nao equivale a capa comercial ilustrada;
+4. reforcar que, para capas comerciais, a arte-base deve ser gerada ou curada como imagem narrativa sem texto, com tipografia aplicada localmente;
+5. validar os documentos atualizados.
+
+Registro posterior:
+
+- analisado `publicacao/capa/README.md` de `O Juramento da Herdeira de Vinterholm`;
+- conferidos `capa-base-frontal-v1.png`, `capa-oficial-v1.png` e a capa completa UICLAP derivada;
+- lidos os scripts `scripts/build_capa_oficial.sh` e `scripts/build_uiclap_cover.sh`;
+- confirmada com `exiftool` a presenca de metadados C2PA na arte-base, incluindo `OpenAI Media Service API`, `gpt-image` e tipo de fonte digital `trainedAlgorithmicMedia`;
+- comparada visualmente a capa de Vinterholm com uma capa candidata automatizada de `books/capas/capas-candidatas-estilo-curado-final-public-pdf`;
+- conclusao registrada: as capas automatizadas por script sao organizadas como prova tecnica, mas nao atingem o padrao comercial narrativo da capa de Vinterholm;
+- atualizado `pt/PROTOCOLO_EDITORIAL_LIVROS.md` com a secao `Qualidade visual de capas` e regras reforcadas para `Capas geradas por IA`;
+- atualizado `en/EDITORIAL_BOOK_PROTOCOL.md` com a secao equivalente `Visual Cover Quality`;
+- regra consolidada: capa abstrata/scriptada sem cena, personagem, objeto narrativo ou direcao visual concreta deve ser tratada como rascunho tecnico ou candidata de baixa fidelidade, nunca como capa comercial final;
+- regra consolidada: para capa comercial, gerar ou curar arte-base narrativa sem texto e aplicar tipografia/lombada/contracapa localmente.
+
+## 2026-07-19 - Registro previo: incorporacao do piloto generativo Anthropology
+
+O usuario aprovou o piloto gerado para `Anthropology` e pediu atualizar este repositorio de protocolo com as descobertas.
+
+Descobertas a consolidar:
+
+- uma capa generativa comercial precisa separar a arte-base sem texto da composicao textual local;
+- status operacional como `piloto` ou `prova` deve ficar em README/metadados, nao impresso na capa limpa;
+- a capa completa limpa e o preview com guias devem ser arquivos diferentes;
+- a contracapa deve conter texto editorial/comercial, nao aviso tecnico de piloto;
+- o diretorio piloto precisa preservar prompt, script de composicao, hashes, dimensoes e referencia do miolo;
+- lombada baseada em imagem de referencia ou estimativa deve ser marcada como nao final ate confirmacao na UICLAP;
+- a validacao minima deve combinar inspecao visual, dimensoes, formato RGB/JPEG, DPI, hashes e revisao humana.
+
+Registro posterior:
+
+- atualizado `pt/PROTOCOLO_EDITORIAL_LIVROS.md` com a secao `Fluxo piloto de capa generativa`;
+- atualizado `en/EDITORIAL_BOOK_PROTOCOL.md` com a secao equivalente `Generative Cover Pilot Workflow`;
+- atualizado `README.md` para destacar a regra de capa generativa e apontar para o template reutilizavel;
+- atualizado `docs/DECISIONS.md` com a decisao de exigir pilotos antes de capas em lote;
+- atualizado `docs/VALIDATION.md` com checklist tecnico/editorial para piloto de capa generativa;
+- atualizado `docs/TASKS.md` para registrar a tarefa como concluida e manter pendencias reais;
+- atualizado `docs/README.md` para indexar o novo template documental;
+- criado `docs/templates/generative-cover-pilot/` com `README.md`, `CHECKLIST.md`, `metadata.example.json`, `prompt-template.pt.md` e `prompt-template.en.md`;
+- validacoes executadas: `git diff --check`, busca por espacos finais/conflitos, `python3 -m py_compile templates/create_book_project.py`, remocao do cache Python gerado pela compilacao e conferencia de `git status --short`;
+- resultado: o protocolo agora registra a metodologia validada no piloto `Anthropology` e fornece um modelo textual para repetir o fluxo sem confundir prova tecnica com capa comercial final.
