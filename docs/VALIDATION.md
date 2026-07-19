@@ -64,6 +64,43 @@ Checklist especifico:
 - [ ] O resultado foi revisado visualmente em tamanho completo e miniatura.
 - [ ] O piloto foi aprovado antes de qualquer geracao em lote.
 
+## Validacao dos exemplos praticos
+
+Compilar scripts sem criar cache permanente:
+
+```bash
+python3 - <<'PY'
+from pathlib import Path
+
+for path in [
+    Path("examples/scripts/render_cover_examples.py"),
+    Path("examples/projeto-livro-academico-uiclap/scripts/build_covers.py"),
+    Path("examples/projeto-romance-com-orelhas/scripts/build_covers.py"),
+]:
+    compile(path.read_text(encoding="utf-8"), str(path), "exec")
+    print("compile ok:", path)
+PY
+```
+
+Gerar e validar os exemplos:
+
+```bash
+python3 examples/scripts/render_cover_examples.py
+python3 -m json.tool examples/projeto-livro-academico-uiclap/publicacao/capas/metadata-capas.json >/dev/null
+python3 -m json.tool examples/projeto-romance-com-orelhas/publicacao/capas/metadata-capas.json >/dev/null
+python3 - <<'PY'
+from pathlib import Path
+from PIL import Image
+
+for project in ["projeto-livro-academico-uiclap", "projeto-romance-com-orelhas"]:
+    root = Path("examples") / project / "publicacao" / "capas"
+    for path in sorted(root.glob("*.*")):
+        if path.suffix.lower() in {".png", ".jpg", ".jpeg"}:
+            image = Image.open(path)
+            print(project, path.name, image.format, image.mode, image.size, image.info.get("dpi"))
+PY
+```
+
 ## Checklist antes de publicar
 
 - [ ] `README.md` explica objetivo, uso e estrutura.

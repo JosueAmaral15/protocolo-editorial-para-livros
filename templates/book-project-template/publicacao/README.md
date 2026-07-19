@@ -8,6 +8,6 @@ Use esta pasta para artefatos de leitura, prova, venda ou entrega.
 - `markdown/`: Markdown exportado para consumo ou revisao.
 - `latex/`: fontes LaTeX geradas ou ajustadas.
 - `metadata/`: metadados de publicacao.
+- `capas/`: capas externas finais ou provas, incluindo capa completa e capa com orelhas quando aplicavel.
 
 Regra: quando o manuscrito mudar, regenere os artefatos publicos afetados e registre a validacao em `history-chat.md`.
-

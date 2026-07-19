@@ -38,4 +38,6 @@
 - [ ] Contrast and title hierarchy are acceptable.
 - [ ] Spine text is readable if spine text is allowed.
 - [ ] Bleed and safety margin look correct.
+- [ ] Flaps were included only with a compatible printer/platform template.
+- [ ] Flap text does not duplicate back-cover copy unnecessarily.
 - [ ] The author approved the pilot before any batch generation.

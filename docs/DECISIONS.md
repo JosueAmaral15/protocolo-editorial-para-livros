@@ -83,3 +83,15 @@
 **Motivo:** o piloto permite identificar problemas de promessa visual, tipografia, contracapa, lombada, texto tecnico visivel e requisitos UICLAP antes de multiplicar o erro em dezenas de livros.
 
 **Impacto:** arquivos com guias ou avisos tecnicos nao devem ser confundidos com capas limpas. Status como `piloto`, `preview`, `validacao` e `estimativa_nao_final` pertence a README/metadados, nao ao arquivo limpo destinado a revisao de upload.
+
+## 2026-07-19 - Exemplos praticos versionados
+
+**Status:** aceito
+
+**Contexto:** o protocolo precisava de exemplos concretos de projetos de livro, inclusive com capa frontal, capa completa e capa completa com orelhas.
+
+**Decisao:** criar `examples/` com dois projetos didaticos e um script compartilhado de geracao deterministica de capas.
+
+**Motivo:** exemplos versionados tornam a metodologia auditavel, executavel e facil de copiar, sem depender de servico externo de imagem ou de arquivos pesados.
+
+**Impacto:** as capas dos exemplos sao tecnicas e didaticas. Elas mostram estrutura, papel dos arquivos e validacao, mas nao devem ser tratadas como capas comerciais finais.

@@ -59,6 +59,10 @@ Each language directory has its own `README.md`.
 ├── en/
 │   ├── README.md
 │   └── EDITORIAL_BOOK_PROTOCOL.md
+├── examples/
+│   ├── projeto-livro-academico-uiclap/
+│   ├── projeto-romance-com-orelhas/
+│   └── scripts/
 └── templates/
     ├── README.md
     ├── create_book_project.py
@@ -98,6 +102,16 @@ For commercial covers, generative AI should produce textless base art. Titles, s
 Before scaling cover generation to a catalog, create a pilot folder with the base art, prompt, composition script, clean complete cover, separate validation preview, metadata, and hashes. A technically valid image is not publication-ready until it passes visual review and platform-specific checks such as UICLAP spine and preview validation.
 
 Reusable pilot templates live in [docs/templates/generative-cover-pilot](docs/templates/generative-cover-pilot).
+
+## Practical Examples
+
+Practical book-project examples live in [examples](examples).
+
+They include reproducible cover generation for:
+
+- front cover only;
+- back cover + spine + front cover;
+- flap + back cover + spine + front cover + flap.
 
 ## Generator
 

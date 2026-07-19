@@ -112,9 +112,10 @@ Essa distincao e essencial para nao confundir processo editorial com texto da ob
 
 - `miolo` e o PDF interno do livro, sem capa completa externa. Capa completa UICLAP nao deve ser inserida dentro do PDF/EPUB/DOCX de leitura.
 - A capa impressa UICLAP deve ser tratada como arquivo separado de upload, em uma unica imagem com contracapa a esquerda, lombada no centro e capa a direita.
+- Quando a grafica ou plataforma aceitar orelhas, usar template proprio e tratar a arte como arquivo externo separado, normalmente com orelha esquerda, contracapa, lombada, capa e orelha direita. Nao adaptar medidas de capa sem orelha sem confirmacao tecnica.
 - Recalcular lombada a partir da paginacao final do miolo. Se houver apenas estimativa, marcar como `estimativa_nao_final`.
 - Reservar area para codigo de barras interno da plataforma e validar sangria, margem de seguranca, corte, legibilidade e preview 3D.
-- Manter separados: frente simples, arte-base sem texto, capa completa, contracapa, lombada, QR Code, marketing e metadados.
+- Manter separados: frente simples, arte-base sem texto, capa completa, contracapa, lombada, orelhas, QR Code, marketing e metadados.
 - Usar estados explicitos:
   - `template_sem_capa_base`: placeholder tecnico;
   - `capa_candidata_estilo_curado`: arte tematica revisavel;

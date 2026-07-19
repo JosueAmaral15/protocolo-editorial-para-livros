@@ -22,7 +22,9 @@ capas/pilotos-generativos/<book-slug>/
 ├── <slug>-base-generativa-v1.png
 ├── <slug>-capa-frontal-piloto-v1.png
 ├── <slug>-capa-completa-uiclap-piloto-v1.jpg
-└── <slug>-capa-completa-uiclap-piloto-v1-preview-validacao.jpg
+├── <slug>-capa-completa-uiclap-piloto-v1-preview-validacao.jpg
+├── <slug>-capa-completa-com-orelhas-piloto-v1.jpg
+└── <slug>-capa-completa-com-orelhas-piloto-v1-preview-validacao.jpg
 ```
 
 Use language-appropriate filenames if the project is English-first, but keep the same separation of roles.
@@ -33,5 +35,6 @@ Use language-appropriate filenames if the project is English-first, but keep the
 - The clean complete cover should not contain guides or internal status text.
 - The validation preview should be separate from the clean cover.
 - The back cover should speak to the reader, not explain the production process.
+- Flaps should be included only when the printer or platform provides a compatible template.
 - The spine must remain `estimativa_nao_final` until confirmed by the publishing platform.
 - Do not scale a batch until the pilot is visually approved.

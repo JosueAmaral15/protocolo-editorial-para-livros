@@ -179,3 +179,35 @@ Registro posterior:
 - criado `docs/templates/generative-cover-pilot/` com `README.md`, `CHECKLIST.md`, `metadata.example.json`, `prompt-template.pt.md` e `prompt-template.en.md`;
 - validacoes executadas: `git diff --check`, busca por espacos finais/conflitos, `python3 -m py_compile templates/create_book_project.py`, remocao do cache Python gerado pela compilacao e conferencia de `git status --short`;
 - resultado: o protocolo agora registra a metodologia validada no piloto `Anthropology` e fornece um modelo textual para repetir o fluxo sem confundir prova tecnica com capa comercial final.
+
+## 2026-07-19 - Registro previo: exemplos praticos de projetos de livro e capas
+
+O usuario pediu criar exemplos praticos de projetos de livro, incluindo:
+
+- criacao de capa frontal;
+- capa completa com contracapa, lombada e capa;
+- capa completa com orelhas, contracapa, lombada e capa.
+
+Plano operacional:
+
+1. criar uma pasta `examples/` no repositorio;
+2. adicionar projetos exemplo com estrutura editorial semelhante ao template principal;
+3. criar scripts reprodutiveis para gerar capas didaticas leves;
+4. gerar imagens reais de exemplo para capa frontal, capa completa sem orelhas e capa completa com orelhas;
+5. documentar que os exemplos sao tecnicos e didaticos, nao capas comerciais finais;
+6. atualizar README, tarefas, validacao e protocolos PT/EN quando necessario;
+7. validar estrutura, imagens, JSON, scripts, ausencia de cache e Git.
+
+Registro posterior:
+
+- criado `examples/README.md`;
+- criado o script compartilhado `examples/scripts/render_cover_examples.py`;
+- criados os projetos exemplo `examples/projeto-livro-academico-uiclap/` e `examples/projeto-romance-com-orelhas/`;
+- cada projeto recebeu `README.md`, `history-chat.md`, `docs/TASKS.md`, `docs/DECISIONS.md`, `docs/VALIDATION.md`, manuscrito placeholder e wrapper `scripts/build_covers.py`;
+- geradas imagens reais de exemplo em `publicacao/capas/` para capa frontal, capa completa com contracapa/lombada/capa, preview de validacao, capa completa com orelhas e preview de validacao com orelhas;
+- gerado `metadata-capas.json` em cada exemplo, com dimensoes, papeis dos arquivos, hashes SHA-256, status `exemplo_tecnico_didatico_nao_final` e lombada `estimativa_nao_final`;
+- atualizado `README.md`, `docs/DECISIONS.md`, `docs/README.md`, `docs/TASKS.md` e `docs/VALIDATION.md` para indexar e validar os exemplos;
+- atualizados os protocolos PT/EN para mencionar capas com orelhas como arquivo externo separado que depende de template proprio da grafica/plataforma;
+- atualizado o template `docs/templates/generative-cover-pilot/` para contemplar opcionalmente capa completa com orelhas;
+- apos alerta do usuario sobre erro `image_url` invalido, a etapa evitou `image_gen` e visualizacao inline de imagens; as capas foram geradas localmente por Pillow e validadas por comandos textuais;
+- validacoes executadas ate aqui: compilacao logica dos scripts com `compile()`, execucao dos wrappers, validacao JSON, validacao de dimensoes/modo/formato/DPI das imagens e busca por caches Python.

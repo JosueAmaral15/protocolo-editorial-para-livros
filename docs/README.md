@@ -10,3 +10,5 @@ Esta pasta guarda a documentacao operacional do protocolo editorial.
   - `templates/generative-cover-pilot/`: modelo de piloto para capas com IA generativa, incluindo prompt, metadados e checklist.
 
 Os templates executaveis para projetos de livro ficam em `../templates/`.
+
+Os exemplos praticos completos ficam em `../examples/`.

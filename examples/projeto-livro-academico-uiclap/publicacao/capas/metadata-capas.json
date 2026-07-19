@@ -1,0 +1,52 @@
+{
+  "status": "exemplo_tecnico_didatico_nao_final",
+  "created_at": "2026-07-19T00:00:00-03:00",
+  "book": {
+    "title": "Projeto Academico UICLAP",
+    "subtitle": "Exemplo tecnico de miolo, capa e validacao",
+    "author": "Nome do Autor",
+    "genre": "academic nonfiction",
+    "slug": "projeto-livro-academico-uiclap"
+  },
+  "dimensions": {
+    "front_px": [
+      1748,
+      2480
+    ],
+    "spine_px": [
+      140,
+      2480
+    ],
+    "flap_px": [
+      620,
+      2480
+    ],
+    "complete_px": [
+      3636,
+      2480
+    ],
+    "complete_with_flaps_px": [
+      4876,
+      2480
+    ],
+    "dpi": 300,
+    "spine_status": "estimativa_nao_final",
+    "platform_note": "Example dimensions for protocol learning. Confirm real printer/platform template before production."
+  },
+  "files": {
+    "base_art": "assets/capas/projeto-livro-academico-uiclap-arte-base-tecnica-v1.png",
+    "front_cover": "publicacao/capas/projeto-livro-academico-uiclap-capa-frontal-exemplo.png",
+    "complete_cover": "publicacao/capas/projeto-livro-academico-uiclap-capa-lombada-contracapa-exemplo.jpg",
+    "complete_cover_preview": "publicacao/capas/projeto-livro-academico-uiclap-capa-lombada-contracapa-preview-validacao.jpg",
+    "complete_cover_with_flaps": "publicacao/capas/projeto-livro-academico-uiclap-capa-lombada-contracapa-orelhas-exemplo.jpg",
+    "complete_cover_with_flaps_preview": "publicacao/capas/projeto-livro-academico-uiclap-capa-lombada-contracapa-orelhas-preview-validacao.jpg"
+  },
+  "sha256": {
+    "base_art": "b19f574656939e367dc1d2a6d9d3962891bec7fb84fca235a8bb1046db8f775a",
+    "front_cover": "b19f574656939e367dc1d2a6d9d3962891bec7fb84fca235a8bb1046db8f775a",
+    "complete_cover": "01943087bc27c2414db60aa69d254baeb79741f2ed67de299ee515c2288d391b",
+    "complete_cover_preview": "a999ccc790d7192923ccfdd1c88a7272fdfeb14ddc1106e82a7e99828e72ef2e",
+    "complete_cover_with_flaps": "03c25aa19b00cf6478de4670720290fd59d3267ee6633b9bfcc094c36fb11ced",
+    "complete_cover_with_flaps_preview": "3e9eca59cc48a07becd5727790b5387d88b0909b47e1dd726a6a857997573ac9"
+  }
+}

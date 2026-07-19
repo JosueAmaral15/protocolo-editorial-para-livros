@@ -112,9 +112,10 @@ This distinction is essential because editorial process documentation must not b
 
 - The `miolo` is the internal book PDF, without the complete external cover. A complete UICLAP cover must not be inserted into the PDF/EPUB/DOCX reading file.
 - A printed UICLAP cover must be treated as a separate upload file, in one image with back cover on the left, spine in the center, and front cover on the right.
+- When the printer or platform accepts flaps, use its own template and treat the artwork as a separate external file, usually with left flap, back cover, spine, front cover, and right flap. Do not adapt non-flap cover measurements without technical confirmation.
 - Recalculate the spine from the final page count of the interior file. If only an estimate exists, mark it as `estimativa_nao_final`.
 - Reserve space for the platform barcode and validate bleed, safety margin, trim, readability, and 3D preview.
-- Keep separate: simple front cover, textless base art, complete cover, back-cover copy, spine, QR Code, marketing assets, and metadata.
+- Keep separate: simple front cover, textless base art, complete cover, back-cover copy, spine, flaps, QR Code, marketing assets, and metadata.
 - Use explicit states:
   - `template_sem_capa_base`: technical placeholder;
   - `capa_candidata_estilo_curado`: reviewable thematic art;

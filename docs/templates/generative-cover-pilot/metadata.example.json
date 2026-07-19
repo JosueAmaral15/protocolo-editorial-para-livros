@@ -18,6 +18,8 @@
     "back_px": [0, 0],
     "spine_px": [0, 0],
     "front_px": [0, 0],
+    "flap_px": [0, 0],
+    "complete_with_flaps_px": [0, 0],
     "bleed_mm": 5,
     "safety_margin_mm": 10,
     "spine_mm": 0,
@@ -34,6 +36,8 @@
     "front_cover": "<slug>-capa-frontal-piloto-v1.png",
     "complete_cover": "<slug>-capa-completa-uiclap-piloto-v1.jpg",
     "validation_preview": "<slug>-capa-completa-uiclap-piloto-v1-preview-validacao.jpg",
+    "complete_cover_with_flaps": "<slug>-capa-completa-com-orelhas-piloto-v1.jpg",
+    "complete_cover_with_flaps_preview": "<slug>-capa-completa-com-orelhas-piloto-v1-preview-validacao.jpg",
     "prompt": "prompt-base-generativa.md",
     "script": "build_pilot_cover.py"
   },
@@ -41,7 +45,9 @@
     "base_art": "<sha256>",
     "front_cover": "<sha256>",
     "complete_cover": "<sha256>",
-    "validation_preview": "<sha256>"
+    "validation_preview": "<sha256>",
+    "complete_cover_with_flaps": "<sha256>",
+    "complete_cover_with_flaps_preview": "<sha256>"
   },
   "human_review": {
     "visual_review": "pending",

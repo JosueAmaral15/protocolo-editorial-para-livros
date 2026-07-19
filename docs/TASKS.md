@@ -3,7 +3,6 @@
 ## Pendente
 
 - [ ] Revisar `pt/PROTOCOLO_EDITORIAL_LIVROS.md` apos publicacao inicial.
-- [ ] Adicionar exemplos praticos completos de projetos de livro.
 
 ## Em andamento
 
@@ -32,6 +31,8 @@
 - [x] Fazer push para `origin/main`.
 - [x] Documentar fluxo de piloto generativo de capa antes de escalar lotes.
 - [x] Criar exemplo reutilizavel de diretorio de piloto de capa generativa.
+- [x] Adicionar exemplos praticos completos de projetos de livro.
+- [x] Incluir exemplos de capa frontal, capa completa e capa completa com orelhas.
 
 ## Revisao humana
 
@@ -39,3 +40,4 @@
 - [ ] Conferir se nenhum dado privado ou especifico demais foi migrado.
 - [ ] Conferir se a estrutura faz sentido para GitHub.
 - [ ] Conferir se as regras de capa generativa cobrem os requisitos reais da UICLAP e do fluxo editorial do autor.
+- [ ] Conferir visualmente as capas didaticas em tamanho completo e miniatura.

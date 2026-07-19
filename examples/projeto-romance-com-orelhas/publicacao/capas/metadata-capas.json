@@ -1,0 +1,52 @@
+{
+  "status": "exemplo_tecnico_didatico_nao_final",
+  "created_at": "2026-07-19T00:00:00-03:00",
+  "book": {
+    "title": "A Casa Sobre o Vale",
+    "subtitle": "Exemplo de romance com capa completa e orelhas",
+    "author": "Nome do Autor",
+    "genre": "fiction",
+    "slug": "projeto-romance-com-orelhas"
+  },
+  "dimensions": {
+    "front_px": [
+      1748,
+      2480
+    ],
+    "spine_px": [
+      140,
+      2480
+    ],
+    "flap_px": [
+      620,
+      2480
+    ],
+    "complete_px": [
+      3636,
+      2480
+    ],
+    "complete_with_flaps_px": [
+      4876,
+      2480
+    ],
+    "dpi": 300,
+    "spine_status": "estimativa_nao_final",
+    "platform_note": "Example dimensions for protocol learning. Confirm real printer/platform template before production."
+  },
+  "files": {
+    "base_art": "assets/capas/projeto-romance-com-orelhas-arte-base-tecnica-v1.png",
+    "front_cover": "publicacao/capas/projeto-romance-com-orelhas-capa-frontal-exemplo.png",
+    "complete_cover": "publicacao/capas/projeto-romance-com-orelhas-capa-lombada-contracapa-exemplo.jpg",
+    "complete_cover_preview": "publicacao/capas/projeto-romance-com-orelhas-capa-lombada-contracapa-preview-validacao.jpg",
+    "complete_cover_with_flaps": "publicacao/capas/projeto-romance-com-orelhas-capa-lombada-contracapa-orelhas-exemplo.jpg",
+    "complete_cover_with_flaps_preview": "publicacao/capas/projeto-romance-com-orelhas-capa-lombada-contracapa-orelhas-preview-validacao.jpg"
+  },
+  "sha256": {
+    "base_art": "4969a18456d814e6d6d93b28ff2d048819947ef70c467d50cd26a156baea341f",
+    "front_cover": "4969a18456d814e6d6d93b28ff2d048819947ef70c467d50cd26a156baea341f",
+    "complete_cover": "f57aab32a3730de228c59529f97ba7fe64d7f1a5562b35f1b0e73979be5031ee",
+    "complete_cover_preview": "8edb9eb2769de89a4628d71ca67d60ac4dd76d6e6c6afe598908b9f429d1c8a1",
+    "complete_cover_with_flaps": "c2cbaa78d6b460b8e36b397dd0db4107418b4654fdbd1a8faa40ba245676f763",
+    "complete_cover_with_flaps_preview": "8f03e0c8eeaf15948d831d683fb349d19416b5de094fbc1f588312e74dde4035"
+  }
+}
