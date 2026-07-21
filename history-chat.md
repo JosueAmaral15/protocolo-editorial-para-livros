@@ -295,3 +295,28 @@ Registro posterior:
   sem texto, enquanto a composicao local adapta a obra ao template oficial;
 - atualizados protocolos PT/EN, checklist de piloto, README de documentacao e
   template de assets de capa; nenhum miolo ou arte final foi modificado.
+
+## 2026-07-21 - Registro previo: auditoria de acervo visual e contracapa
+
+O usuario apontou que uma contracapa escurecida a ponto de apagar a imagem e
+uma nova arte que ignora capas, personagens e cenas ja existentes reduzem a
+qualidade comercial e podem contradizer a obra. Serao registrados no protocolo
+os controles de auditoria visual antes de geracao, continuidade da cena entre
+contracapa e capa e uso prioritario de referencias canonicas, especialmente em
+ficcao. A etapa nao sobrescrevera artes existentes.
+
+Registro posterior:
+
+- a auditoria de um projeto de ficcao encontrou capa completa preexistente,
+  referencias de protagonistas e cenas que uma nova arte generica nao havia
+  considerado; isso confirmou o risco de redundancia e quebra de continuidade;
+- os protocolos PT e EN agora exigem inventario e classificacao do acervo
+  visual antes de gerar ou reinterpretar capa, com consulta obrigatoria a
+  personagens, cenas e capas do proprio projeto;
+- foi definida a continuidade visual como requisito de contracapa: a sinopse
+  pode receber contraste, mas nao pode apagar a cena nem produzir campo preto
+  opaco, vazio ou desconectado da capa;
+- para obras de ficcao, a direcao de arte existente e os personagens ja
+  estabelecidos devem ser preservados; nova IA generativa somente complementa
+  uma lacuna ou derivacao aprovada;
+- nenhuma imagem, capa ou miolo existente foi sobrescrito nesta correcao.
