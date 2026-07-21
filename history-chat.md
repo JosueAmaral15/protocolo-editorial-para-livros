@@ -320,3 +320,22 @@ Registro posterior:
   estabelecidos devem ser preservados; nova IA generativa somente complementa
   uma lacuna ou derivacao aprovada;
 - nenhuma imagem, capa ou miolo existente foi sobrescrito nesta correcao.
+
+## 2026-07-21 - Registro previo: proibicao de repetir a arte frontal na contracapa
+
+Foi identificado que uma composicao recente reutilizou literalmente a mesma
+arte vertical na frente e na contracapa. Isso e repeticao, nao continuidade
+visual. O protocolo sera corrigido para exigir arte panoramica de exterior ou
+duas cenas distintas e coerentes, sem sobrescrever as composicoes rejeitadas
+nesta etapa.
+
+Registro posterior:
+
+- foram acrescentadas regras PT/EN que proíbem repetir ou espelhar a arte
+  vertical frontal na contracapa;
+- foram formalizados os dois metodos aceitaveis: uma unica arte panoramica
+  destinada ao exterior inteiro, com recortes diferentes, ou duas cenas
+  distintas e coerentes sob o mesmo briefing visual;
+- metadados de futuras capas devem informar o metodo, os arquivos-fontes de
+  cada painel e a revisao humana que confirma ausencia de repeticao literal;
+- nenhuma arte existente foi alterada durante esta atualizacao documental.
