@@ -211,3 +211,58 @@ Registro posterior:
 - atualizado o template `docs/templates/generative-cover-pilot/` para contemplar opcionalmente capa completa com orelhas;
 - apos alerta do usuario sobre erro `image_url` invalido, a etapa evitou `image_gen` e visualizacao inline de imagens; as capas foram geradas localmente por Pillow e validadas por comandos textuais;
 - validacoes executadas ate aqui: compilacao logica dos scripts com `compile()`, execucao dos wrappers, validacao JSON, validacao de dimensoes/modo/formato/DPI das imagens e busca por caches Python.
+
+## 2026-07-19 - Registro previo: correcao dos exemplos de capa
+
+O usuario apontou corretamente que as capas tecnicas geradas por script em `examples/` nao se parecem com o padrao comercial de `O Juramento da Herdeira de Vinterholm` nem com o piloto generativo aprovado.
+
+Correcao de entendimento:
+
+- as imagens geometricas anteriores sao wireframes didaticos de composicao e nao devem ser apresentadas como exemplo comercial de capa;
+- o exemplo pratico principal deve incluir a imagem piloto generativa aprovada anteriormente;
+- `templates/book-project-template/assets` estava pobre como scaffold porque nao trazia subpastas reais para capas, arte-base, QR e imagens;
+- o template deve indicar onde colocar assets, mas nao deve fingir que um asset generico e capa final de qualquer livro.
+
+Plano operacional:
+
+1. copiar para o repositorio do protocolo o piloto generativo `en-anthropology` criado em `books/capas/pilotos-generativos/en-anthropology/`;
+2. criar um exemplo dedicado `examples/projeto-piloto-generativo-anthropology/`;
+3. reclassificar os exemplos geometricos como wireframes tecnicos, nao capas comerciais;
+4. criar subpastas README em `templates/book-project-template/assets/`;
+5. atualizar README, docs e historico;
+6. validar arquivos, hashes, imagens e Git sem usar visualizacao inline de imagens.
+
+Registro posterior:
+
+- criado `examples/projeto-piloto-generativo-anthropology/` com copia do piloto
+  real de `books/capas/pilotos-generativos/en-anthropology/`;
+- preservadas a arte-base, a capa frontal, a capa completa limpa, o preview de
+  validacao, prompt, script de composicao e metadados do piloto;
+- os exemplos `projeto-livro-academico-uiclap` e
+  `projeto-romance-com-orelhas` foram rotulados de forma explicita como
+  wireframes tecnicos, sem valor de referencia artistica ou de upload;
+- preenchidos `assets/capas`, `assets/imagens`, `assets/fontes` e `assets/qr`
+  do template com READMEs rastreaveis e regras de uso;
+- atualizados README, tarefas, decisoes e validacao para separar composicao
+  tecnica de direcao de arte comercial;
+- a etapa nao usou `image_gen` nem visualizacao inline, evitando repetir o erro
+  de `image_url` invalido reportado pelo usuario;
+- pendente: validar por comandos os artefatos copiados e revisar visualmente o
+  piloto em tamanho completo antes de trata-lo como qualquer coisa alem de
+  referencia revisavel.
+
+## 2026-07-21 - Validacao da correcao dos exemplos de capa
+
+Registro posterior complementar:
+
+- compilados sem erro `create_book_project.py`, o renderizador de wireframes,
+  os dois wrappers de exemplo e `build_pilot_cover.py`;
+- reconstruido localmente o piloto `Anthropology` a partir da arte-base copiada;
+- confirmadas as propriedades: frente PNG RGB `3590 x 5197`, capa completa e
+  preview JPEG RGB `7559 x 5197`, ambos a 600 DPI;
+- confirmados hashes SHA-256 contra `metadata-v2.json` e igualdade byte a byte
+  da frente, capa completa e preview em relacao ao piloto preservado em `books`;
+- confirmados JSON valido, ausencia de conflitos/espacos finais via
+  `git diff --check` e ausencia de cache Python;
+- nenhum arquivo de miolo foi alterado; a aprovacao visual humana continua
+  necessaria antes de qualquer uso como capa de upload.

@@ -1,6 +1,11 @@
 # Projeto Romance Com Orelhas
 
-Exemplo pratico de projeto editorial para romance ou ficcao.
+Exemplo de estrutura editorial para romance ou ficcao.
+
+> **Aviso de escopo:** as imagens deste diretorio sao wireframes tecnicos
+> deterministas. Elas demonstram a arquitetura de capa, contracapa, lombada e
+> orelhas. Nao sao uma referencia de qualidade artistica nem uma capa comercial
+> pronta para a UICLAP.
 
 Este exemplo demonstra:
 
@@ -35,4 +40,7 @@ O arquivo `publicacao/capas/metadata-capas.json` registra dimensoes, papeis dos 
 
 `exemplo_tecnico_didatico_nao_final`
 
-As capas deste exemplo mostram o fluxo tecnico. Em publicacao real, a arte de venda deve ser curada, gerada ou contratada e revisada visualmente.
+As capas deste exemplo mostram somente o fluxo tecnico. Em publicacao real, a
+arte de venda deve ser curada, gerada ou contratada e revisada visualmente.
+Consulte `../projeto-piloto-generativo-anthropology/` para um exemplo de piloto
+generativo com qualidade visual comercial e composicao local.

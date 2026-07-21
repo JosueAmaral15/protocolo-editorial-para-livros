@@ -76,11 +76,62 @@ for path in [
     Path("examples/scripts/render_cover_examples.py"),
     Path("examples/projeto-livro-academico-uiclap/scripts/build_covers.py"),
     Path("examples/projeto-romance-com-orelhas/scripts/build_covers.py"),
+    Path("examples/projeto-piloto-generativo-anthropology/scripts/build_pilot_cover.py"),
 ]:
     compile(path.read_text(encoding="utf-8"), str(path), "exec")
     print("compile ok:", path)
 PY
 ```
+
+Validar o piloto generativo real sem confundir com os wireframes:
+
+```bash
+python3 examples/projeto-piloto-generativo-anthropology/scripts/build_pilot_cover.py
+python3 -m json.tool examples/projeto-piloto-generativo-anthropology/publicacao/capas/metadata-v2.json >/dev/null
+python3 - <<'PY'
+from pathlib import Path
+from PIL import Image
+
+root = Path("examples/projeto-piloto-generativo-anthropology")
+for path in [
+    root / "assets/capas/en-anthropology-base-generativa-v1.png",
+    root / "publicacao/capas/en-anthropology-capa-frontal-piloto-v2.png",
+    root / "publicacao/capas/en-anthropology-capa-completa-uiclap-piloto-v2.jpg",
+    root / "publicacao/capas/en-anthropology-capa-completa-uiclap-piloto-v2-preview-validacao.jpg",
+]:
+    image = Image.open(path)
+    print(path.name, image.format, image.mode, image.size, image.info.get("dpi"))
+PY
+```
+
+Conferir que os hashes declarados pelo piloto correspondem aos arquivos:
+
+```bash
+python3 - <<'PY'
+import hashlib
+import json
+from pathlib import Path
+
+root = Path("examples/projeto-piloto-generativo-anthropology")
+metadata = json.loads(
+    (root / "publicacao/capas/metadata-v2.json").read_text(encoding="utf-8")
+)
+locations = {
+    "base_art": root / "assets/capas" / metadata["files"]["base_art"],
+    "front_cover": root / "publicacao/capas" / metadata["files"]["front_cover"],
+    "complete_cover": root / "publicacao/capas" / metadata["files"]["complete_cover"],
+    "validation_preview": root / "publicacao/capas" / metadata["files"]["validation_preview"],
+}
+for role, path in locations.items():
+    digest = hashlib.sha256(path.read_bytes()).hexdigest()
+    assert digest == metadata["sha256"][role], role
+print("pilot hashes: ok")
+PY
+```
+
+Os arquivos dos projetos academico e de romance devem ser chamados de
+wireframes tecnicos nas demonstracoes. A referencia de qualidade visual e o
+piloto generativo, que ainda exige aprovacao humana antes de qualquer lote.
 
 Gerar e validar os exemplos:
 

@@ -95,3 +95,24 @@
 **Motivo:** exemplos versionados tornam a metodologia auditavel, executavel e facil de copiar, sem depender de servico externo de imagem ou de arquivos pesados.
 
 **Impacto:** as capas dos exemplos sao tecnicas e didaticas. Elas mostram estrutura, papel dos arquivos e validacao, mas nao devem ser tratadas como capas comerciais finais.
+
+## 2026-07-21 - Separar wireframes de referencia visual comercial
+
+**Status:** aceito
+
+**Contexto:** os exemplos geometricos deterministas explicam a montagem de
+arquivos, mas nao apresentam o padrao visual narrativo e comercial demonstrado
+pela capa de `O Juramento da Herdeira de Vinterholm` e pelo piloto generativo de
+`Anthropology`.
+
+**Decisao:** rotular os exemplos geometricos como wireframes tecnicos e incluir
+`examples/projeto-piloto-generativo-anthropology/` como referencia pratica de
+piloto visual. Estruturar tambem `assets/capas`, `assets/imagens`,
+`assets/fontes` e `assets/qr` no template por meio de READMEs rastreaveis.
+
+**Motivo:** layout tecnico correto nao substitui direcao de arte, narrativa
+visual, legibilidade comercial e revisao humana.
+
+**Impacto:** o repositorio passa a mostrar separadamente como compor um arquivo
+e como documentar um piloto comercial. Nenhum wireframe deve ser enviado como
+capa final.

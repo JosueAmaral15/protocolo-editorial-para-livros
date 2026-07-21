@@ -60,6 +60,7 @@ Each language directory has its own `README.md`.
 │   ├── README.md
 │   └── EDITORIAL_BOOK_PROTOCOL.md
 ├── examples/
+│   ├── projeto-piloto-generativo-anthropology/
 │   ├── projeto-livro-academico-uiclap/
 │   ├── projeto-romance-com-orelhas/
 │   └── scripts/
@@ -107,7 +108,9 @@ Reusable pilot templates live in [docs/templates/generative-cover-pilot](docs/te
 
 Practical book-project examples live in [examples](examples).
 
-They include reproducible cover generation for:
+The main visual-quality example is [examples/projeto-piloto-generativo-anthropology](examples/projeto-piloto-generativo-anthropology), copied from an approved generative-cover pilot.
+
+The other examples are technical wireframes. They include reproducible layout generation for:
 
 - front cover only;
 - back cover + spine + front cover;

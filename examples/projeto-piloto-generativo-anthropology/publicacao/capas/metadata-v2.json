@@ -1,0 +1,57 @@
+{
+  "status": "piloto_generativo_revisavel_nao_final",
+  "created_at": "2026-07-19T00:00:00-03:00",
+  "book": {
+    "title": "Anthropology",
+    "subtitle": "The Externalization of the Essence of Man",
+    "author": "Josué Amaral",
+    "language": "en",
+    "source_pdf": "/home/josue/Documents/josue-writter-workspace/books/final-public-pdf/en/Anthropology - By Josué Amaral, in progress since 08_13_19, A5 paper.pdf",
+    "source_pdf_pages": 23,
+    "format": "A5"
+  },
+  "uiclap_cover_layout": {
+    "dpi": 600,
+    "total_px": [
+      7559,
+      5197
+    ],
+    "total_mm_from_reference": [
+      320,
+      220
+    ],
+    "back_px": [
+      3591,
+      5197
+    ],
+    "spine_px": [
+      378,
+      5197
+    ],
+    "front_px": [
+      3590,
+      5197
+    ],
+    "bleed_mm": 5,
+    "safety_margin_mm": 10,
+    "spine_mm": 16,
+    "spine_note": "Spine follows the user's UICLAP reference image for this pilot; confirm official spine after final interior upload/page count."
+  },
+  "methodology": [
+    "AI-generated textless front cover base art",
+    "local deterministic typography and complete-cover composition",
+    "separate files for base art, front cover, complete UICLAP cover, and validation preview"
+  ],
+  "files": {
+    "base_art": "en-anthropology-base-generativa-v1.png",
+    "front_cover": "en-anthropology-capa-frontal-piloto-v2.png",
+    "complete_cover": "en-anthropology-capa-completa-uiclap-piloto-v2.jpg",
+    "validation_preview": "en-anthropology-capa-completa-uiclap-piloto-v2-preview-validacao.jpg"
+  },
+  "sha256": {
+    "base_art": "cd18b3596bacc0989aa1647a053229aa6d99ca03d6af04b767a1676db61beb99",
+    "front_cover": "9690015307e3d8b8a739085bcf9414a640a80970040f14d27d3d69bb277a2545",
+    "complete_cover": "01b20c6672bf8febc7ed5901c9b6db6fdbdfdb0ab149e14b2055c24ae5c8bbde",
+    "validation_preview": "a48821dbf6c296a57c7ecc315b4d85f9f65793a4b86382262633d5cc73105638"
+  }
+}

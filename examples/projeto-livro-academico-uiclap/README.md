@@ -1,6 +1,11 @@
 # Projeto Livro Academico UICLAP
 
-Exemplo pratico de projeto editorial para livro academico, tecnico ou ensaistico.
+Exemplo de estrutura editorial para livro academico, tecnico ou ensaistico.
+
+> **Aviso de escopo:** as imagens deste diretorio sao wireframes tecnicos
+> deterministas. Elas servem para explicar paineis, sangria, lombada e arquivos
+> de validacao. Nao sao uma referencia de qualidade artistica nem uma capa
+> comercial pronta para a UICLAP.
 
 Este exemplo demonstra:
 
@@ -35,4 +40,7 @@ O arquivo `publicacao/capas/metadata-capas.json` registra dimensoes, papeis dos 
 
 `exemplo_tecnico_didatico_nao_final`
 
-As capas deste exemplo nao sao capas comerciais finais. Elas demonstram o protocolo e precisam ser substituidas por arte curada ou generativa revisada antes de publicacao real.
+As capas deste exemplo nao sao capas comerciais finais. Para uma referencia de
+qualidade visual, consulte `../projeto-piloto-generativo-anthropology/`, que
+preserva arte-base generativa, composicao tipografica local e uma capa completa
+limpa separada do preview de validacao.

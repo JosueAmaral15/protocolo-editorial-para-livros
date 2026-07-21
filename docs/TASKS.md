@@ -33,6 +33,9 @@
 - [x] Criar exemplo reutilizavel de diretorio de piloto de capa generativa.
 - [x] Adicionar exemplos praticos completos de projetos de livro.
 - [x] Incluir exemplos de capa frontal, capa completa e capa completa com orelhas.
+- [x] Reclassificar os exemplos geometricos como wireframes tecnicos.
+- [x] Incorporar um piloto generativo real como referencia de qualidade visual.
+- [x] Preencher a estrutura documentada de `assets/` no template de projeto.
 
 ## Revisao humana
 
@@ -40,4 +43,5 @@
 - [ ] Conferir se nenhum dado privado ou especifico demais foi migrado.
 - [ ] Conferir se a estrutura faz sentido para GitHub.
 - [ ] Conferir se as regras de capa generativa cobrem os requisitos reais da UICLAP e do fluxo editorial do autor.
-- [ ] Conferir visualmente as capas didaticas em tamanho completo e miniatura.
+- [ ] Conferir visualmente o piloto generativo em tamanho completo e miniatura.
+- [ ] Revisar ou remover os wireframes se forem causar confusao em uma demonstracao publica.

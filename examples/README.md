@@ -1,13 +1,14 @@
 # Practical Book Project Examples
 
-This folder contains complete, lightweight examples for applying the editorial protocol to real book-project structures.
+This folder contains practical examples for applying the editorial protocol to real book-project structures.
 
-The examples are intentionally deterministic and small enough for Git. They demonstrate project organization, cover file roles, validation metadata, and reproducible scripts.
+There are two kinds of examples here: a real generative pilot and technical wireframes. Do not confuse them.
 
 ## Examples
 
-- `projeto-livro-academico-uiclap/`: academic/nonfiction book project with front cover, complete cover, and complete cover with flaps.
-- `projeto-romance-com-orelhas/`: fiction project demonstrating the same cover outputs with a more literary visual direction.
+- `projeto-piloto-generativo-anthropology/`: real generative-cover pilot copied from the approved `en-anthropology` workflow. This is the visual-quality reference example.
+- `projeto-livro-academico-uiclap/`: technical wireframe for academic/nonfiction cover layout, including front cover, complete cover, and complete cover with flaps.
+- `projeto-romance-com-orelhas/`: technical wireframe for fiction cover layout with flaps.
 
 ## Generate Covers
 
@@ -26,7 +27,7 @@ python3 examples/scripts/render_cover_examples.py --project projeto-romance-com-
 
 ## Output Types
 
-Each example generates:
+The technical wireframes generate:
 
 - `*-capa-frontal-exemplo.png`: front cover only.
 - `*-capa-lombada-contracapa-exemplo.jpg`: back cover + spine + front cover.
@@ -37,4 +38,6 @@ Each example generates:
 
 ## Important
 
-These are technical examples. They show the protocol and file structure. They are not commercial final covers.
+The geometric examples are only technical wireframes. They show file structure and panel layout. They are not commercial final covers and should not be used as visual-quality references.
+
+For a real visual pilot, use `projeto-piloto-generativo-anthropology/`.

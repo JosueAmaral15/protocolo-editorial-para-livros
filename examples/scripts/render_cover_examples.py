@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Render deterministic book-cover examples for the editorial protocol repo."""
+"""Render deterministic technical cover wireframes for the editorial protocol repo.
+
+These outputs explain panel layout and validation structure. They are not
+commercial cover art and must not be used as a visual-quality reference.
+"""
 
 from __future__ import annotations
 
