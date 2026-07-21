@@ -6,6 +6,9 @@ Esta pasta guarda a documentacao operacional do protocolo editorial.
 - `DECISIONS.md`: decisoes metodologicas.
 - `VALIDATION.md`: comandos e checklists de validacao.
 - `GLOBAL_HISTORY_EXTRACT.md`: aprendizados genericos extraidos do historico global.
+- `UICLAP_CAPAS_GABARITOS.md`: regras oficiais e fluxo de adaptacao para capa,
+  contracapa, lombada e orelhas.
+- `UICLAP_COVER_TEMPLATES.md`: English version of the UICLAP template guide.
 - `templates/`: espaco para futuros modelos documentais.
   - `templates/generative-cover-pilot/`: modelo de piloto para capas com IA generativa, incluindo prompt, metadados e checklist.
 

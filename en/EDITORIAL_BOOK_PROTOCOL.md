@@ -122,6 +122,8 @@ This distinction is essential because editorial process documentation must not b
   - `prova_tecnica_com_capa_base`: proof with selected art and pending official spine;
   - `pronta_para_upload`: only after final interior file, official spine, approved back cover, barcode/QR review, and visual validation.
 - Before generating covers in bulk, inventory the full catalog by language, confirm counts, and search for PDFs newer than the final files selected as interior files.
+- Use `docs/UICLAP_COVER_TEMPLATES.md` as the operational guide. Final dimensions are not fixed: download the Portal template/SVG after uploading the final interior file, and treat local formulas only as planning aids.
+- For unique, professional covers, define art direction per book. Generative AI should create textless narrative base art; local composition then adapts that art to the UICLAP template without sacrificing creativity, readability, or typographic accuracy.
 
 ### Visual Cover Quality
 

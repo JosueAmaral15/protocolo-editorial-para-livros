@@ -122,6 +122,8 @@ Essa distincao e essencial para nao confundir processo editorial com texto da ob
   - `prova_tecnica_com_capa_base`: prova com arte selecionada e lombada ainda pendente;
   - `pronta_para_upload`: somente depois de miolo final, lombada oficial, contracapa aprovada, codigo de barras/QR revisados e validacao visual.
 - Antes de gerar capas em lote, inventariar o catalogo completo por idioma, confirmar contagens e pesquisar se ha PDFs mais recentes que os arquivos finais usados como miolo.
+- Usar `docs/UICLAP_CAPAS_GABARITOS.md` como guia operacional. A medida final nao e fixa: baixar o gabarito/SVG depois do upload do miolo e tratar qualquer formula local apenas como planejamento.
+- Para capas unicas e profissionais, definir direcao de arte especifica por obra. A IA generativa deve produzir arte-base narrativa sem texto; a composicao local adapta a mesma base ao gabarito UICLAP sem sacrificar criatividade, legibilidade ou precisao tipografica.
 
 ### Qualidade visual de capas
 

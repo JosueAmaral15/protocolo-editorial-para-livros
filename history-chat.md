@@ -266,3 +266,32 @@ Registro posterior complementar:
   `git diff --check` e ausencia de cache Python;
 - nenhum arquivo de miolo foi alterado; a aprovacao visual humana continua
   necessaria antes de qualquer uso como capa de upload.
+
+## 2026-07-21 - Registro previo: pesquisa oficial de gabaritos UICLAP
+
+O usuario definiu que as futuras capas precisam ser criativas, unicas e
+profissionais, com imagens generativas adequadas ao tema, mas tambem adaptaveis
+ao gabarito real da UICLAP. A tarefa e pesquisar as fontes oficiais da
+plataforma sobre capa completa sem orelhas e com orelhas, registrar medidas,
+limites e fluxo de validacao no protocolo bilingue, sem transformar uma medida
+de piloto em regra universal.
+
+Registro posterior:
+
+- pesquisadas fontes oficiais UICLAP de suporte e blog sobre formato, upload,
+  gabarito, sangria, margem de seguranca, orelhas e visualizacao 3D;
+- criado `docs/UICLAP_CAPAS_GABARITOS.md` em portugues e
+  `docs/UICLAP_COVER_TEMPLATES.md` em ingles, ambos com fontes, formulas de
+  planejamento e fluxo de adaptacao ao Portal;
+- consolidada a regra de que o gabarito/SVG gerado apos o upload do miolo final
+  prevalece sobre formulas, referencias de outros livros e medidas de pilotos;
+- registrados: JPG ate 50 MB, minimo de 300 DPI, alvo de 600 DPI, sangria de
+  5 mm, margem interna de seguranca de ao menos 10 mm, limite de largura de
+  43 cm, lombada a partir de 60 paginas e duas orelhas iguais entre 5 e 10 cm;
+- documentada a reserva de codigo de barras e a necessidade de verificar o
+  preview 3D antes de marcar uma capa como pronta para upload;
+- incorporada a orientacao autoral do usuario: cada livro precisa de direcao de
+  arte unica, profissional e criativa; IA generativa cria arte-base narrativa
+  sem texto, enquanto a composicao local adapta a obra ao template oficial;
+- atualizados protocolos PT/EN, checklist de piloto, README de documentacao e
+  template de assets de capa; nenhum miolo ou arte final foi modificado.
